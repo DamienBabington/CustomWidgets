@@ -1,5 +1,5 @@
 //
-//  WidgetView.swift
+//  WidgetLayoutView.swift
 //  CustomWidgets
 //
 //  Created by Damien Babington on 9/15/24.
@@ -27,6 +27,15 @@ struct WidgetLayoutView: View {
                     .foregroundStyle(.gray)
             }
             .padding(32)
+        }
+        .dropDestination(for: String.self) { droppedWidget, location in
+            print("Widget Dropped: Remove shadow from dropped widget and reset appearance of FooterCircleView")
+            print("Drop Location: \(location)")
+            print("Color data of dropped widget: \(droppedWidget)")
+            return false
+        } isTargeted: { status in
+            print("Widget hovered over drop target: Add widget to this target's Widget array and recalculate the frames and positions")
+            // withAnimation(.bouncy) { }
         }
     }
 }

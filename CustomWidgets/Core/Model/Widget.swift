@@ -1,5 +1,5 @@
 //
-//  FooterButton.swift
+//  Widget.swift
 //  CustomWidgets
 //
 //  Created by Damien Babington on 9/15/24.

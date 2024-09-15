@@ -14,6 +14,20 @@ struct FooterCircleView: View {
         Circle()
             .fill(Color(hex: color))
             .frame(width: 50, height: 50)
+            .draggable(color) {
+                // View appearance while being dragged:
+                Circle()
+                    .fill(Color(hex: color))
+                    .frame(width: 50, height: 50)
+                    .shadow(radius: 6)
+                    .onAppear {
+                        print("Widget started being dragged: Add strokeBorder and white fill to the dragged FooterCircle")
+                        // .fill(.white)
+                        // .strokeBorder(style: StrokeStyle(lineWidth: 2.0, dash: [6]))
+                        // .foregroundStyle(Color(hex: color))
+                        // .frame(width: 50, height: 50)
+                    }
+            }
     }
 }
 
