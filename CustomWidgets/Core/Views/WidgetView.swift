@@ -16,10 +16,11 @@ struct WidgetView: View {
         RoundedRectangle(cornerRadius: 36)
             .fill(Color(hex: widget.hexColor))
             .draggable(widget) {
-                RoundedRectangle(cornerRadius: 36)
+                Circle()
                     .fill(Color(hex: widget.hexColor))
                     .shadow(radius: 6)
                     .frame(width: 50, height: 50)
+                    .contentShape(.dragPreview, Circle())
                     .onAppear() {
                         viewModel.draggingWidget = widget
                         print("Started dragging widget with hex: \(widget.hexColor)")
