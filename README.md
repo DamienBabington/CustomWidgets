@@ -28,4 +28,5 @@ Additional Improvements:
   When starting to drag a widget from the FooterView, there is a delay before it begins dragging. To fix this,
   I would use a dragGesture and set the minimumDragDistance to 0 so the widget begins dragging immediately.
 - ColorPicker:
-  Add a long press gesture or a tap gesture to the footer widgets which opens a color picker view so the user can select very specific colors for their widgets. 
+  Add a long press gesture or a tap gesture to the footer widgets which opens a color picker view so the user can select very specific colors for their widgets.
+- Add Unit Tests
