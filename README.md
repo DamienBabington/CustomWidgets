@@ -30,3 +30,5 @@ Additional Improvements:
 - ColorPicker:
   Add a long press gesture or a tap gesture to the footer widgets which opens a color picker view so the user can select very specific colors for their widgets.
 - Add Unit Tests
+- Remove white border from widgets while being dragged.
+- Add strokeBorder and white fill to the footer view where the widget was dragged from. 
