@@ -8,7 +8,14 @@
 import SwiftUI
 
 struct FooterView: View {
-    @EnvironmentObject var viewModel: WidgetLayoutViewModel
+    
+    let footerColors = [
+        "#00CFFF",
+        "#FF5C93",
+        "#FFEB3B",
+        "#AEEA00",
+        "#FF6D00"
+    ]
     
     var body: some View {
         ZStack() {
@@ -18,8 +25,9 @@ struct FooterView: View {
                 .shadow(radius: 6)
             
             HStack(spacing: 16) {
-                ForEach(viewModel.buttonColors, id: \.self) { color in
-                    FooterCircleView(color: color)
+                ForEach(footerColors, id: \.self) { color in
+                    WidgetView(widget: CustomWidget(hexColor: color))
+                        .frame(width: 50, height: 50)
                 }
             }
         }

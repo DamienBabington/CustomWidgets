@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5E5ECB892C9417C400C22AB4 /* Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5ECB882C9417C400C22AB4 /* Widget.swift */; };
+		5E5ECB892C9417C400C22AB4 /* CustomWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5ECB882C9417C400C22AB4 /* CustomWidget.swift */; };
+		5E9C7FDB2C9A81A800A98F0A /* InitialLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9C7FDA2C9A81A800A98F0A /* InitialLayoutView.swift */; };
 		5E9F85062C931BD2009E0DAB /* CustomWidgetsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9F85052C931BD2009E0DAB /* CustomWidgetsApp.swift */; };
 		5E9F850A2C931BD5009E0DAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E9F85092C931BD5009E0DAB /* Assets.xcassets */; };
 		5E9F850D2C931BD5009E0DAB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E9F850C2C931BD5009E0DAB /* Preview Assets.xcassets */; };
@@ -17,11 +18,13 @@
 		5E9F85212C93DED5009E0DAB /* WidgetLayoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9F85202C93DED5009E0DAB /* WidgetLayoutViewModel.swift */; };
 		5E9F85232C93EA9E009E0DAB /* WidgetLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9F85222C93EA9E009E0DAB /* WidgetLayoutView.swift */; };
 		5ED692FF2C9446950080CA7D /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ED692FE2C9446950080CA7D /* Colors.xcassets */; };
-		5ED693032C945A400080CA7D /* FooterCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED693022C945A400080CA7D /* FooterCircleView.swift */; };
+		5ED693032C945A400080CA7D /* WidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED693022C945A400080CA7D /* WidgetView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5E5ECB882C9417C400C22AB4 /* Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Widget.swift; sourceTree = "<group>"; };
+		5E5ECB882C9417C400C22AB4 /* CustomWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomWidget.swift; sourceTree = "<group>"; };
+		5E9C7FDA2C9A81A800A98F0A /* InitialLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialLayoutView.swift; sourceTree = "<group>"; };
+		5E9C7FDC2C9A82A900A98F0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		5E9F85022C931BD2009E0DAB /* CustomWidgets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomWidgets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E9F85052C931BD2009E0DAB /* CustomWidgetsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomWidgetsApp.swift; sourceTree = "<group>"; };
 		5E9F85092C931BD5009E0DAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -32,7 +35,7 @@
 		5E9F85202C93DED5009E0DAB /* WidgetLayoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetLayoutViewModel.swift; sourceTree = "<group>"; };
 		5E9F85222C93EA9E009E0DAB /* WidgetLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetLayoutView.swift; sourceTree = "<group>"; };
 		5ED692FE2C9446950080CA7D /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
-		5ED693022C945A400080CA7D /* FooterCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterCircleView.swift; sourceTree = "<group>"; };
+		5ED693022C945A400080CA7D /* WidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +52,7 @@
 		5E5ECB872C9417B400C22AB4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				5E5ECB882C9417C400C22AB4 /* Widget.swift */,
+				5E5ECB882C9417C400C22AB4 /* CustomWidget.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -79,6 +82,7 @@
 				5E9F850B2C931BD5009E0DAB /* Preview Content */,
 				5E9F850C2C931BD5009E0DAB /* Preview Assets.xcassets */,
 				5ED692FE2C9446950080CA7D /* Colors.xcassets */,
+				5E9C7FDC2C9A82A900A98F0A /* Info.plist */,
 			);
 			path = CustomWidgets;
 			sourceTree = "<group>";
@@ -103,7 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				5E9F851F2C93DE84009E0DAB /* ViewModel */,
-				5E9F851E2C93DE7F009E0DAB /* View */,
+				5E9F851E2C93DE7F009E0DAB /* Views */,
 				5E5ECB872C9417B400C22AB4 /* Model */,
 			);
 			path = Core;
@@ -117,15 +121,16 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		5E9F851E2C93DE7F009E0DAB /* View */ = {
+		5E9F851E2C93DE7F009E0DAB /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				5E9F85172C9328ED009E0DAB /* HomeView.swift */,
+				5E9C7FDA2C9A81A800A98F0A /* InitialLayoutView.swift */,
 				5E9F85222C93EA9E009E0DAB /* WidgetLayoutView.swift */,
 				5E9F85192C93D8C8009E0DAB /* FooterView.swift */,
-				5ED693022C945A400080CA7D /* FooterCircleView.swift */,
+				5ED693022C945A400080CA7D /* WidgetView.swift */,
 			);
-			path = View;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		5E9F851F2C93DE84009E0DAB /* ViewModel */ = {
@@ -207,12 +212,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E5ECB892C9417C400C22AB4 /* Widget.swift in Sources */,
+				5E5ECB892C9417C400C22AB4 /* CustomWidget.swift in Sources */,
 				5E9F851A2C93D8C8009E0DAB /* FooterView.swift in Sources */,
 				5E9F85232C93EA9E009E0DAB /* WidgetLayoutView.swift in Sources */,
-				5ED693032C945A400080CA7D /* FooterCircleView.swift in Sources */,
+				5ED693032C945A400080CA7D /* WidgetView.swift in Sources */,
 				5E9F85182C9328ED009E0DAB /* HomeView.swift in Sources */,
 				5E9F85062C931BD2009E0DAB /* CustomWidgetsApp.swift in Sources */,
+				5E9C7FDB2C9A81A800A98F0A /* InitialLayoutView.swift in Sources */,
 				5E9F85212C93DED5009E0DAB /* WidgetLayoutViewModel.swift in Sources */,
 				5E9F85162C93258E009E0DAB /* HexColorExtension.swift in Sources */,
 			);
@@ -351,6 +357,7 @@
 				DEVELOPMENT_TEAM = 66599JH4Y4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CustomWidgets/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -380,6 +387,7 @@
 				DEVELOPMENT_TEAM = 66599JH4Y4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CustomWidgets/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

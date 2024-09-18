@@ -5,19 +5,16 @@
 //  Created by Damien Babington on 9/15/24.
 //
 
-import Foundation
+import SwiftUI
 
 class WidgetLayoutViewModel: NSObject, ObservableObject {
     
-    let buttonColors = [
-        "#00CFFF",
-        "#FF5C93",
-        "#FFEB3B",
-        "#AEEA00",
-        "#FF6D00"
-    ]
+    @Published var widgets = [CustomWidget]()
+    @Published var draggingWidget: CustomWidget?
     
-    let widgets = [Widget]()
+    let columns = [
+        GridItem(.flexible(minimum: 60, maximum: 60))
+    ]
     
     func configureDroppedWidget() {
         
